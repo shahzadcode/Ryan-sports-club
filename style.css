@@ -1,0 +1,48 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+section {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 25px;
+    letter-spacing: 6px;
+    line-height: 49px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 27px;
+    margin-top: 10px;
+}
+
+.sb-title {
+    font-size: 35px;
+    letter-spacing: 9px;
+    line-height: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    margin: 0 60px 0 60px;
+    font-weight: 400;
+    text-align: justify;
+    /* background-color: azure; */
+}
+
+.text p {
+    margin-top: 0px;
+    line-height: 150%;
+}
+
