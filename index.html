@@ -18,10 +18,37 @@
     />
   </head>
   <style>
+    /* first line  */
     .Logo_size {
       width: 70px;
     }
+
+    .nav-btn-clr:hover {
+      color: White;
+    }
+    /* header second line  */
+    .list {
+      display: none;
+      position: absolute;
+      /* background: #000; */
+      width: 100px;
+      /* left: 50%; */
+      transform: translateX(-50%);
+    }
+
+    .btns {
+      /* background-color: aqua; */
+      background: white;
+      border-radius: 20px;
+      border: none;
+    }
+
+    .btns:hover {
+      background-color: rgb(247, 247, 247);
+      border-radius: 20px;
+    }
   </style>
+
   <body>
     <header>
       <nav class=" ">
@@ -30,18 +57,107 @@
           class="container d-flex justify-content-between align-items-center px-2 py-3"
         >
           <img src="Logo.png" class="Logo_size" alt="" />
-          <div>
-            <button>Login</button>
-            <button>Signup</button>
+          <div class="">
+            <button class="mx-2 btn btn-info text-white" type="submit">
+              Login
+            </button>
+            <button type="button" class="btn btn-outline-info nav-btn-clr">
+              Signup
+            </button>
           </div>
         </div>
         <hr />
+        <!-- second header line  -->
+        <nav class="d-flex justify-content-between container mx-auto">
+          <!-- first  -->
+          <div class="position-relative">
+            <button class="btns">The club</button>
+            <ul class="list">
+              <li>Gallery</li>
+              <li>Board Members</li>
+            </ul>
+          </div>
+          <!-- second -->
+          <div class="position-relative">
+            <button class="btns">Membership</button>
+            <ul class="list">
+              <li>About Membership</li>
+              <li>Membership Fees</li>
+              <li>Membership</li>
+            </ul>
+          </div>
+
+          <!-- third -->
+          <div class="position-relative">
+            <button class="btns">activities</button>
+            <ul class="list">
+              <li>Aqua Point</li>
+              <li>Badminton</li>
+              <li>Billiards</li>
+              <li>Body Zone</li>
+              <li>Table Tennis</li>
+              <li>Cricket</li>
+            </ul>
+          </div>
+          <!-- fourth-->
+          <div class="position-relative">
+            <button class="btns">Facilities</button>
+            <ul class="list">
+              <li>Accomodation</li>
+              <li>Food and Beverages</li>
+              <li>Library</li>
+            </ul>
+          </div>
+
+          <!-- fifth -->
+          <div class="position-relative">
+            <button class="btns">
+              <!-- Three -->
+              <div class="position-relative">
+                <button class="btns">Events</button>
+              </div>
+            </button>
+          </div>
+          <!-- sixth-->
+          <div class="position-relative">
+            <button class="btns">Feedback</button>
+          </div>
+
+          <!-- seventh-->
+          <div class="position-relative">
+            <button class="btns">Contact Us</button>
+          </div>
+        </nav>
       </nav>
     </header>
     <main></main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
+    <script>
+      const btns = document.querySelectorAll(".btns");
+
+      btns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          // Pehle sabhi lists ko band karo
+          document.querySelectorAll(".list").forEach((list) => {
+            list.style.display = "none";
+            // list.style.display =
+          });
+
+          // Ab sirf clicked button ki list toggle karo
+          const list = btn.parentElement.querySelector(".list");
+          list.style.display =
+            list.style.display === "block" ? "none" : "block";
+        });
+      });
+
+      // Click outside to close dropdown
+      document.addEventListener("click", (event) => {
+        if (!event.target.closest("nav")) {
+          document.querySelectorAll(".list").forEach((list) => {
+            list.style.display = "none";
+          });
+        }
+      });
+    </script>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

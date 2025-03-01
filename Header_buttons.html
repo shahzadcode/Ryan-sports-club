@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .list {
+      display: none;
+      position: absolute;
+      /* background: #000; */
+      width: 100px;
+      /* left: 50%; */
+      transform: translateX(-50%);
+    }
+
+    .btns {
+      /* background-color: aqua; */
+      background: white;
+      border-radius: 20px;
+      border: none;
+    }
+
+    .btns:hover {
+      background-color: rgb(247, 247, 247);
+      border-radius: 20px;
+    }
+  </style>
+
+  <body>
+    <nav class="d-flex justify-content-evenly">
+      <!-- first  -->
+      <div class="position-relative">
+        <button class="btns">The club</button>
+        <ul class="list">
+          <li>Gallery</li>
+          <li>Board Members</li>
+        </ul>
+      </div>
+      <!-- second -->
+      <div class="position-relative">
+        <button class="btns">Membership</button>
+        <ul class="list">
+          <li>About Membership</li>
+          <li>Membership Fees</li>
+          <li>Membership</li>
+        </ul>
+      </div>
+
+      <!-- third -->
+      <div class="position-relative">
+        <button class="btns">activities</button>
+        <ul class="list">
+          <li>Aqua Point</li>
+          <li>Badminton</li>
+          <li>Billiards</li>
+          <li>Body Zone</li>
+          <li>Table Tennis</li>
+          <li>Cricket</li>
+        </ul>
+      </div>
+      <!-- fourth-->
+      <div class="position-relative">
+        <button class="btns">Facilities</button>
+        <ul class="list">
+          <li>Accomodation</li>
+          <li>Food and Beverages</li>
+          <li>Library</li>
+        </ul>
+      </div>
+
+      <!-- fifth -->
+      <div class="position-relative">
+        <button class="btns">
+          <!-- Three -->
+          <div class="position-relative">
+            <button class="btns">Events</button>
+          </div>
+        </button>
+      </div>
+      <!-- sixth-->
+      <div class="position-relative">
+        <button class="btns">Feedback</button>
+      </div>
+
+      <!-- seventh-->
+      <div class="position-relative">
+        <button class="btns">Contact Us</button>
+      </div>
+    </nav>
+
+    <script>
+      const btns = document.querySelectorAll(".btns");
+
+      btns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          // Pehle sabhi lists ko band karo
+          document.querySelectorAll(".list").forEach((list) => {
+            list.style.display = "none";
+            // list.style.display =
+          });
+
+          // Ab sirf clicked button ki list toggle karo
+          const list = btn.parentElement.querySelector(".list");
+          list.style.display =
+            list.style.display === "block" ? "none" : "block";
+        });
+      });
+
+      // Click outside to close dropdown
+      document.addEventListener("click", (event) => {
+        if (!event.target.closest("nav")) {
+          document.querySelectorAll(".list").forEach((list) => {
+            list.style.display = "none";
+          });
+        }
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
