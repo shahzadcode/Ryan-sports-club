@@ -1,0 +1,23 @@
+.Logo_size {
+    width: 70px;
+  }
+  
+
+  .carousel-item img {
+    height: 70vh;
+  }
+
+/* about */
+.about{
+    background-color: aqua;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.about-content h2{
+    
+}
