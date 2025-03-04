@@ -16,6 +16,13 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- fontaweosme -->
+
+    <script
+      src="https://kit.fontawesome.com/06cd2dd2d9.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fontaweosme -->
   </head>
   <style>
     /* first line  */
@@ -30,9 +37,15 @@
     .list {
       display: none;
       position: absolute;
-      /* background: #000; */
-      width: 100px;
-      /* left: 50%; */
+      background: #cccccc;
+      width: 200px;
+      /* text-align: center; */
+      /* display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; */
+      list-style: none;
+      left: 50%;
       transform: translateX(-50%);
     }
 
@@ -71,7 +84,9 @@
         <nav class="d-flex justify-content-between container mx-auto">
           <!-- first  -->
           <div class="position-relative">
-            <button class="btns">The club</button>
+            <button class="btns">
+              The club <i class="fa-solid fa-angle-down"></i>
+            </button>
             <ul class="list">
               <li>Gallery</li>
               <li>Board Members</li>
@@ -79,7 +94,9 @@
           </div>
           <!-- second -->
           <div class="position-relative">
-            <button class="btns">Membership</button>
+            <button class="btns">
+              Membership <i class="fa-solid fa-angle-down"></i>
+            </button>
             <ul class="list">
               <li>About Membership</li>
               <li>Membership Fees</li>
@@ -89,7 +106,9 @@
 
           <!-- third -->
           <div class="position-relative">
-            <button class="btns">activities</button>
+            <button class="btns">
+              activities <i class="fa-solid fa-angle-down"></i>
+            </button>
             <ul class="list">
               <li>Aqua Point</li>
               <li>Badminton</li>
@@ -101,7 +120,9 @@
           </div>
           <!-- fourth-->
           <div class="position-relative">
-            <button class="btns">Facilities</button>
+            <button class="btns">
+              Facilities <i class="fa-solid fa-angle-down"></i>
+            </button>
             <ul class="list">
               <li>Accomodation</li>
               <li>Food and Beverages</li>
