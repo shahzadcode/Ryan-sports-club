@@ -49,17 +49,13 @@
       padding: 0;
       margin: 0;
       text-align: center;
-      /* display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; */
+      z-index: 1;
       list-style: none;
       left: 50%;
       transform: translateX(-50%);
     }
 
     .btns {
-      /* background-color: aqua; */
       background: white;
       border-radius: 20px;
       border: none;
@@ -70,13 +66,11 @@
       border-radius: 20px;
     }
 
-    /* Hero section styling */
     
   .slider {
-    position: relative; 
-    z-index: -1;
-    width: 100%;
-    margin: 0 auto;  
+    /* z-index: 10; */
+    /* width: 100%; */
+    /* margin: 0 auto;   */
   }
 
   
@@ -86,51 +80,9 @@
     object-fit: cover; 
   }
 
+  /* about section  */
 
-  .about {
-    width: 100%;
-    height: 100%;
-
-  }
-
-  .about-content {
-    background-color: rgb(170, 170, 133);
-  }
-
-  .about-content h3 {
-    padding-top: 3%;
-    text-align: center;
-    font-size: 33px;
-    font-weight: 400;
-  }
-
-  .about-content h2 {
-    padding-top: 0.5%;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 600;
-    letter-spacing: 10px;
-  }
-
-  .about-content p {
-    margin: 15px 50px;
-    padding: 0;
-    text-align: start;
-    /* background-color: aquamarine; */
-    font-size: 19px;
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 1.5;
-  }
-
-  .about-content button {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: beige;
-    border-radius: 50px;
-  }
+  
   </style>
 
   <body>
@@ -229,16 +181,16 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img
-          src="https://cdn.pixabay.com/photo/2024/07/18/21/29/darts-8905121_1280.jpg"
-          class="d-block w-100" alt="..." />
+          src="https://cdn.pixabay.com/photo/2021/07/21/20/11/beach-volleyball-6483905_1280.jpg"
+          class="d-block w-100 object-fit-cover" alt="..." />
       </div>
       <div class="carousel-item">
         <img
-          src="https://westwood.ie/img/asset/aW1hZ2VzL211bHRpLWNvbG9yLTIuMi5qcGc/multi-color-2.2.jpg?fit=contain&w=1400&h=788&s=a95fea769d71294411532e733ae2a1bc"
+          src="https://cdn.pixabay.com/photo/2022/02/16/04/15/cricketer-7015983_1280.jpg"
           class="d-block w-100" alt="..." />
       </div>
       <div class="carousel-item">
-        <img src="https://coloradobiz.com/files/2024/03/adobestock-648196507-scaled-1.jpeg" class="d-block w-100" alt="..." />
+        <img src="https://cdn.pixabay.com/photo/2023/04/17/10/31/tennis-7932066_960_720.jpg" class="d-block w-100" alt="..." />
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -254,19 +206,12 @@
 </header>
 
 <!-- about section -->
-<section class="about">
-<div class="about-content">
-  <h3>ABOUT</h3>
-  <h2>sports club</h2>
-  <p>Every dream needs to be driven by passion to make it come true. Sports Club is one such dream, formed by
-    keeping sheer passion for the gentleman’s game-Cricket. Sports Club was conceived by a group of people headed
-    by Chinubhai Chimanbhai; the then Mayor and leading businessman from Ahmedabad in 1965.
-    The Sports Club gets its flamboyant and elegant design in the heart of city from the renowned architect
-    Charles Correa who also happens to be the designer of the soulful Gandhi Ashram. With a beautiful design and
-    sprawling space; Sports Club has gradually spread its branches for other sports and has become an epitome of
-    entertainment and leisure in the thriving city of Ahmedabad. Today, Sports Club is one of the most regal clubs
-    of Ahmedabad and renowned for its state of the art amenities and splendid aura.</p>
-  <button>learn more</button>
+<section class=" container mx-auto">
+<div class=" d-flex flex-column justify-content-center align-items-center gap-3 p-5">
+  <h4>ABOUT</h4>
+  <h2 class="text-info">SPORTS CLUB</h2>
+  <p>Every dream needs to be driven by passion to make it come true. Sports Club is one such dream, formed by keeping sheer passion for the gentleman’s game-Cricket. Sports Club was conceived by a group of people headed by Chinubhai Chimanbhai; the then Mayor and leading businessman from Ahmedabad in 1965.</p><p>The Sports Club gets its flamboyant and elegant design in the heart of city from the renowned architect Charles Correa who also happens to be the designer of the soulful Gandhi Ashram. With a beautiful design and sprawling space; Sports Club has gradually spread its branches for other sports and has become an epitome of entertainment and leisure in the thriving city of Ahmedabad. Today, Sports Club is one of the most regal clubs of Ahmedabad and renowned for its state of the art amenities and splendid aura.</p>
+  <button class="btn btn-outline-info nav-btn-clr">learn more</button>
 </div>
 <!-- <div class="about-images ">
   <div class="img1"><img src="https://media.strongproject.com/e34732ef832f6784201d8314d682ff38.jpg"></div>
@@ -295,7 +240,7 @@
       });
 
       // Click outside to close dropdown
-      document.addEventListener("click", (event) => {
+      document.addEventListener("mouseover", (event) => {
         if (!event.target.closest("nav")) {
           document.querySelectorAll(".list").forEach((list) => {
             list.style.display = "none";
