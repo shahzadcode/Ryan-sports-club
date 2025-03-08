@@ -66,6 +66,7 @@
       border-radius: 20px;
     }
 
+<<<<<<< HEAD
     
   .slider {
     /* z-index: 10; */
@@ -73,6 +74,9 @@
     /* margin: 0 auto;   */
   }
 
+=======
+  
+>>>>>>> current
   
   .carousel-item img {
     width: 100%;  
@@ -80,8 +84,48 @@
     object-fit: cover; 
   }
 
+<<<<<<< HEAD
   /* about section  */
 
+=======
+  /* Gallery section  */
+
+  .image-container {
+        height: 100%; /* Har image ka parent full height hoga */
+        display: flex;
+        flex-direction: column;
+        /* gap: 10px;  */
+      }
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Image ko crop kar deta hai taki size match ho */
+        /* border-radius: 10px; */
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .gallery-img {
+    background-image: url("https://www.sportsclub-gujarat.com/wp-content/uploads/2019/08/about_bg2.png");
+    background-size: cover;
+    background-position: center; /* This centers the image */
+    padding-bottom: 170px;
+    /* border: none; */
+}
+    
+>>>>>>> current
   
   </style>
 
@@ -220,7 +264,43 @@
 </div> -->
 
 </section>
+<<<<<<< HEAD
     
+=======
+    <!-- gallery section  -->
+    <section class="bg-body-secondary  gallery-img">
+      <div class="container">
+        <div class="row g-0 ">
+          <div class="col-md-6 d-flex flex-column image-container">
+            <div class="position-relative flex-fill">
+              <img
+                src="https://i0.wp.com/bgsirs.edu.in/wp-content/uploads/2023/10/013A0408.jpg?resize=1080%2C720&ssl=1"
+                class="rounded"
+              />
+              <div class="overlay">Indoor</div>
+            </div>
+            <div class="position-relative flex-fill">
+              <img
+                src="https://lh5.googleusercontent.com/proxy/v216sbWCqkmoAz377_Rp7VdFs2RBaDIdJpnJd7s1Cr9FaBdczLHgb-rweFMzjBqRE9vu8m310fmXCwd5pmqfWdyVaq4MdwNPCjX0HtcW9tvQY4zR6ogAeF4Mt76M4fjSUes_GFDd"
+                class="rounded"
+              />
+              <div class="overlay">Outdoor</div>
+            </div>
+          </div>
+          <div class="col-md-6 position-relative">
+            <img
+              src="https://cdn-lkind.nitrocdn.com/QkTNGUkqLsIfIkzWTEfQLZDXmXSPFoAp/assets/images/optimized/rev-af39f2f/www.tolymp.de/wp-content/uploads/2023/03/tolymp_crossall_1000.jpg"
+              class="img-fluid rounded h-100 w-100"
+              style="object-fit: cover"
+            />
+            <div class="overlay">facilities</div>
+          </div>
+        </div>
+      </div>
+      <div class=""></div>
+    </section>
+
+>>>>>>> current
     <script>
       const btns = document.querySelectorAll(".btns");
 
