@@ -1,27 +1,33 @@
+
+// Navbar list open and close 
 const btns = document.querySelectorAll(".btns");
 
 btns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    // Pehle sabhi lists ko band karo
-    document.querySelectorAll(".list").forEach((list) => {
-      list.style.display = "none";
-      // list.style.display =
+  btn.addEventListener("click", (event) => {
+    event.stopPropagation(); // Yeh prevent karega list ko turant band hone se
+
+    const list = btn.parentElement.querySelector(".list");
+
+    // Pehle sab lists ko hide kar do
+    document.querySelectorAll(".list").forEach((l) => {
+      if (l !== list) {   
+        l.style.display = "none";
+      }
     });
 
-    // Ab sirf clicked button ki list toggle karo
-    const list = btn.parentElement.querySelector(".list");
+    // Click hone par sirf selected list toggle hogi
     list.style.display = list.style.display === "block" ? "none" : "block";
   });
 });
 
-// Click outside to close dropdown
-document.addEventListener("mouseover", (event) => {
-  if (!event.target.closest("nav")) {
-    document.querySelectorAll(".list").forEach((list) => {
-      list.style.display = "none";
-    });
-  }
+// Document pe click karne se sab lists band ho jayengi
+document.addEventListener("click", () => {
+  document.querySelectorAll(".list").forEach((list) => {
+    list.style.display = "none";
+  });
 });
+
+// Navbar list open and close 
 
 // function hamburger_click() {
 //   const select = document.querySelector(".second_nav");

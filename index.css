@@ -9,20 +9,19 @@
 .line {
   margin: 0px;
 }
-/* header second line  */
 .second_nav {
-  /* background: #000s; */
   display: none;
-
-  /* margin-top: 10px;
-    margin-bottom: 10px; */
+}
+.second_nav > div {
+  text-align: center;
+  width: 200px;
+  margin: 10px auto;
+  /* background: #000; */
 }
 .btns {
-  /* font-size: 5px; */
-  background: rgb(250, 169, 169);
+  background: rgb(255, 255, 255);
   border-radius: 5px;
   border: none;
-  /* padding: 5px 10px; */
 }
 
 .btns:hover {
@@ -101,9 +100,12 @@
   height: 100%;
   position: absolute;
   top: 0;
+  padding-top: 80px;
   position: fixed;
+  margin: auto;
+  /* display: flex; */
 }
-.fix{
-    position: fixed!important;
-    right: 10px;
+.fix {
+  position: fixed !important;
+  right: 10px;
 }
