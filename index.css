@@ -1,0 +1,111 @@
+/* first line  */
+.Logo_size {
+  width: 70px;
+}
+
+.nav-btn-clr:hover {
+  color: White;
+}
+.line {
+  margin: 0px;
+}
+.second_nav {
+  display: none;
+}
+.second_nav > div {
+  text-align: center;
+  width: 200px;
+  margin: 10px auto;
+  /* background: #000; */
+}
+.btns {
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: none;
+}
+
+.btns:hover {
+  background-color: rgb(247, 247, 247);
+  /* border-radius: 20px; */
+}
+
+.list {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  width: 200px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  z-index: 1;
+  list-style: none;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+.list > li {
+  background: #f5f5f5;
+  border-radius: 5px;
+  margin: 10px 20px;
+  padding: 3px 0px;
+}
+
+/* slider  */
+
+.carousel-item img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+/* Gallery section  */
+
+.image-container {
+  height: 100%; /* Har image ka parent full height hoga */
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px;  */
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Image ko crop kar deta hai taki size match ho */
+  /* border-radius: 10px; */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.gallery-img {
+  background-image: url("https://www.sportsclub-gujarat.com/wp-content/uploads/2019/08/about_bg2.png");
+  background-size: cover;
+  background-position: center; /* This centers the image */
+  padding-bottom: 170px;
+  /* border: none; */
+}
+.show {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding-top: 80px;
+  position: fixed;
+  margin: auto;
+  /* display: flex; */
+}
+.fix {
+  position: fixed !important;
+  right: 10px;
+}
