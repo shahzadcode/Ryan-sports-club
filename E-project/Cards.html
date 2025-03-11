@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Membership Plans</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border-top: 5px solid #2a9d8f;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-header {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 20px;
+            font-size: 1.8rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-body p {
+            font-size: 1rem;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .price {
+            font-size: 2rem;
+            color: #333;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .btn {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .btn:hover {
+            background-color: #1f7a70;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .card-footer {
+            font-size: 0.9rem;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="title">
+    <h2>Choose Your Sports Membership Plan</h2>
+    <p>Select the plan that best fits your passion for sports and wellness!</p>
+</div>
+
+<div class="container">
+
+    <!-- Indoor Sports Plan Card -->
+    <div class="card">
+        <div class="card-header">
+            <h3>Indoor Sports Plan</h3>
+        </div>
+        <div class="card-body">
+            <p>Access to all our indoor sports facilities, including Basketball, Badminton, Table Tennis, and more. Perfect for those who love indoor sports, no matter the weather!</p>
+            <div class="price">$29.99/month</div>
+            <a href="#" class="btn">Join Now</a>
+        </div>
+        <div class="card-footer">
+            <p>Includes: Free equipment rental & 5 hours per week</p>
+        </div>
+    </div>
+
+    <!-- Outdoor Sports Plan Card -->
+    <div class="card">
+        <div class="card-header">
+            <h3>Outdoor Sports Plan</h3>
+        </div>
+        <div class="card-body">
+            <p>Get full access to all outdoor sports activities, such as Tennis, Football, Cricket, and Running Tracks. Enjoy the fresh air while you work out!</p>
+            <div class="price">$39.99/month</div>
+            <a href="#" class="btn">Join Now</a>
+        </div>
+        <div class="card-footer">
+            <p>Includes: Access to all outdoor sports fields & 10 hours per week</p>
+        </div>
+    </div>
+
+    <!-- Recreation Plan Card -->
+    <div class="card">
+        <div class="card-header">
+            <h3>Recreation Plan</h3>
+        </div>
+        <div class="card-body">
+            <p>Relax with recreational activities like Yoga, Swimming, and Wellness Classes. This plan is perfect for those who want to stay active without the intensity of competitive sports.</p>
+            <div class="price">$24.99/month</div>
+            <a href="#" class="btn">Join Now</a>
+        </div>
+        <div class="card-footer">
+            <p>Includes: Access to the pool & 3 yoga classes per week</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
