@@ -109,3 +109,16 @@
   position: fixed !important;
   right: 10px;
 }
+
+/* cards styling  */
+.cards{
+  justify-content: space-between;
+}
+@media (min-width: 992px) { /* lg size ke baad apply hoga */
+  .cards{
+    /* background: #f6dddd; */
+  height: 500px;
+  width: 100%;
+  justify-content: space-between;
+}
+}
