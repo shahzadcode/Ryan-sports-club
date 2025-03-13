@@ -122,3 +122,50 @@
   justify-content: space-between;
 }
 }
+
+
+
+/* footer css */
+ footer.site-footer {
+        background-color: #D5FDF9;
+        padding: 30px 0 0px 0;
+    }
+
+    .footer-widget h5 {
+        color: #78C6BF;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .text-site-yello {
+        color: #78C6BF;
+    }
+
+    .footer-widget p {
+        display: block;
+        color: #000000;
+        padding: 5px 0;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    a {
+        color: #006738;
+        text-decoration: none;
+    }
+
+    .footer-widget ul li a {
+        display: block;
+        color: #000000;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .subscribe-form input {
+        background: #9EDCD6;
+        border-radius: 10px;
+    }
+
+    .text-gray {
+        color: #000000;
+    }
