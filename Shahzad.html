@@ -14,133 +14,75 @@
   <script src="https://kit.fontawesome.com/06cd2dd2d9.js" crossorigin="anonymous"></script>
 </head>
 <style>
-  .form-icon {
-    border: 4px solid rgb(208, 255, 255);
-    font-size: 20px;
+  .carousel-item img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
   }
 
-  p {
-    margin-bottom: 0;
-    color: rgb(86, 86, 86);
+  .slider-content {
+    background-color: rgba(0, 0, 0, 0.502);
+    color: white !important;
+    border-radius: 20px;
+    /* position: absolute; */
+    /* top: 0; */
+    /* margin: auto; */
   }
 
-  .verify-icon i {
-    padding: 5px;
-    border: 2px solid rgb(255, 255, 255);
+  .carousel-indicators button {
+    background-color: #ffffff !important;  /* Forces white background */
+    width: 10px!important;
+    height: 10px!important;
+    border-radius: 100%;
   }
 
-  .verify-icon i:hover {
-    border: 2px solid rgb(121, 244, 255);
-  }
+ 
 </style>
 
 <body>
-  <section class="container mx-auto">
-    <h1 class="text-center text-info p-2  ">Contact us</h1>
-    <div class="row">
-      <div class="col-lg-4 d-flex flex-column gap-2 p-5 p-lg-0">
-        <!-- first card  -->
-        <div class="border border-secondary-subtle rounded-2 position-relative ps-5 py-2 shadow-sm">
-          <h4>Address</h4>
-          <p>The Sports Club Of Gujarat Ltd</p>
-          <p>Sardar Patel Stadium</p>
-          <p>Ahmedabad – 380 014</p>
-          <p>Gujarat ( India )</p>
-          <p>CIN No. U92411GJ1963PLC001183</p>
-          <div
-            class="form-icon bg-info rounded-circle p-3 d-inline-flex align-items-center justify-content-center position-absolute top-50 start-0 translate-middle">
-            <i class="fa-solid fa-address-book text-white"></i>
-          </div>
-        </div>
-        <!-- second card  -->
-        <div class="border border-secondary-subtle rounded-2 position-relative ps-5 py-2 shadow-sm">
-          <h4>Tel</h4>
-
-          <p>91-79-26440371 / 3, 26560597, 26440661</p>
-          <div
-            class="form-icon bg-info rounded-circle p-3 d-inline-flex align-items-center justify-content-center position-absolute top-50 start-0 translate-middle">
-            <i class="fa-solid fa-phone text-white"></i>
-          </div>
-        </div>
-        <!-- three card  -->
-        <div class="border border-secondary-subtle rounded-2 position-relative ps-5 py-2 shadow-sm">
-          <h4>Fax</h4>
-
-          <p>91-79-26440514</p>
-          <div
-            class="form-icon bg-info rounded-circle p-3 d-inline-flex align-items-center justify-content-center position-absolute top-50 start-0 translate-middle">
-            <i class="fa-solid fa-fax text-white"></i>
-          </div>
-        </div>
-        <!-- four  -->
-        <div class="border border-secondary-subtle rounded-2 position-relative ps-5 py-2 shadow-sm">
-          <h4>E-mail</h4>
-          <p>mailbox@sportsclub-gujarat.com</p>
-          <div
-            class="form-icon bg-info rounded-circle p-3 d-inline-flex align-items-center justify-content-center position-absolute top-50 start-0 translate-middle">
-            <i class="fa-solid fa-envelope-open-text text-white"></i>
-          </div>
-        </div>
-        <!-- end  -->
+  <section>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <!-- ----------------------------------------------------------------------second side  -->
-      <div class="col-lg-8 p-lg-2 d-flex flex-column gap-lg-4 justify-content-lg-evenly">
-        <h2 class="m-auto fw-bold">Get In Touch
-        </h2>
-        <!-- parent start -->
-        <div class="d-flex flex-column flex-lg-row w-100 justify-content-lg-between gap-2">
-          <!-- first  -->
-          <div class="w-100">
-            <h5>Name</h5>
-            <input type="text" class="w-100 border border-secondary-subtle rounded-2
-              shadow-sm " />
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="https://cdn.pixabay.com/photo/2024/08/22/22/04/ai-generated-8990242_1280.jpg"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block slider-content ">
+            <h3>Vision</h3>
+            <p>Our company's vision is to make every aspect of sports and recreation accessible and enjoyable. We provide our customers with the best facilities and a safe environment where they can improve their physical health and pursue their interests. Our goal is to ensure that everyone gets the opportunity to experience sports, whether they are young or old, beginners or professionals.
+            </p>
           </div>
-          <!-- second  -->
-          <div class="w-100">
-            <h5 class=" ">Membership Number</h5>
-            <input type="text" class="w-100 border border-secondary-subtle rounded-2
-            shadow-sm " />
-          </div>
-          <!-- parent close  -->
         </div>
-        <!-- second row  -->
-        <div class="d-flex flex-column flex-lg-row w-100 justify-content-lg-between gap-2">
-          <!--second row first  -->
-          <div class="d-flex flex-column w-100 justify-content-lg-between mt-2">
-            <h5>E-mail</h5>
-            <input type="text" class="w-100 border border-secondary-subtle rounded-2
-            shadow-sm " />
-            <h5>Comments</h5>
-            <input type="text" class="w-100 border border-secondary-subtle rounded-2
-            shadow-sm " />
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="https://forsports.at/web/image/8747/All%20players.jpg" class="d-block w-100"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block slider-content">
+            <h3>Services</h3>
+            <p>Our company offers indoor and outdoor sports facilities, including tennis courts, basketball courts, swimming pools, gym facilities, and other recreational activities. We aim to provide our clients with a variety of games and sports experiences to help them achieve their fitness goals. Our facilities are modern and well-maintained, making them suitable for all types of sports enthusiasts.</p>
           </div>
-          <!-- second row second -->
-          <div class="w-100 d-lg-flex flex-column">
-            <h5>Contact Number
-            </h5>
-            <textarea class="w-100 flex-grow-1 p-4 border border-secondary-subtle rounded-2
-            shadow-sm " name="text"></textarea>
-          </div>
-
-          <!-- second close  -->
         </div>
-        <!-- Third row  -->
-
-        <div class="d-flex flex-column justify-content-center align-items-center">
-          <div
-            class="d-lg-flex justify-content-between align-items-center text-center px-2 p-0 p-lg-2 border border-secondary-subtle verify-icon">
-            <h4 class="pt-lg-4 pb-0 m-lg-0">
-              Please prove you are human by selecting the heart.
-            </h4>
-            <i class="fa-solid fa-key fs-1 p-1"></i>
-            <i class="fa-solid fa-tree fs-1 p-1"></i>
-            <i class="fa-solid fa-heart fs-1 p-1"></i>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2024/07/07/06/43/ai-generated-8878451_1280.jpg" class="d-block w-100"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block slider-content">
+            <h3>Quality</h3>
+            <p>We always ensure excellence in our services. Our team continuously upgrades and maintains facilities to provide every customer with a high-quality experience. Our experienced trainers and staff offer the best guidance and support. We are committed to keeping our facilities safe and efficient at all times, ensuring an enjoyable experience for every user.</p>
           </div>
-          <button class="btn btn-info text-white m-2">submit</button>
         </div>
-
-        <!-- Third close  -->
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </section>
   <!-- Bootstrap JavaScript Libraries -->

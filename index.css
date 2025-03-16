@@ -50,21 +50,49 @@
   padding: 3px 0px;
 }
 
-/* slider  */
+/* -------------------------------------------------slider  */
 
 .carousel-item img {
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   object-fit: cover;
 }
 
-/* Gallery section  */
+.slider-content {
+  background-color: rgba(0, 0, 0, 0.502);
+  /* color: white !important; */
+  border-radius: 20px;
+  /* position: absolute; */
+  /* top: 0; */
+  /* margin: auto; */
+}
+.slider-content p {
+  color: white !important;
+  padding-bottom: 10px;
+  /* position: absolute; */
+  /* top: 0; */
+  /* margin: auto; */
+}
+
+.carousel-indicators button {
+  background-color: #1be1ff !important; /* Forces white background */
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+}
+
+/*----------------------------------------- Gallery section  */
 
 .image-container {
   height: 100%; /* Har image ka parent full height hoga */
   display: flex;
   flex-direction: column;
   /* gap: 10px;  */
+}
+.gallery-img h1{
+background: #00000075;
+border-radius: 50px;
+padding: 20px;
 }
 .image-container img {
   width: 100%;
@@ -78,7 +106,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.304); */
   color: white;
   display: flex;
   justify-content: center;
@@ -90,10 +118,12 @@
 .gallery-img {
   background-image: url("https://www.sportsclub-gujarat.com/wp-content/uploads/2019/08/about_bg2.png");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center; /* This centers the image */
   padding-bottom: 50px;
   /* border: none; */
 }
+/* responsive button nav  */
 .show {
   display: block;
   width: 100%;
@@ -111,7 +141,7 @@
 }
 
 /* cards styling  */
-.cards{
+.cards {
   justify-content: space-between;
 }
 
@@ -136,12 +166,19 @@ p {
 }
 /* --------------------------------contact us END  */
 
-
-@media (min-width: 992px) { /* lg size ke baad apply hoga */
-  .cards{
+@media (min-width: 992px) {
+  /* cards  */
+  .cards {
     /* background: #f6dddd; */
-  height: 500px;
-  width: 100%;
-  justify-content: space-between;
+    height: 500px;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
+@media (min-width: 1800px) {
+  /* slider  */
+  .carousel-item {
+    background: #000;
+    height: 30vh;
+  }
 }
