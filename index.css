@@ -114,6 +114,29 @@
 .cards{
   justify-content: space-between;
 }
+
+/* --------------------------------contact us start  */
+.form-icon {
+  border: 4px solid rgb(208, 255, 255);
+  font-size: 20px;
+}
+
+p {
+  margin-bottom: 0;
+  color: rgb(86, 86, 86);
+}
+
+.verify-icon i {
+  padding: 5px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.verify-icon i:hover {
+  border: 2px solid rgb(121, 244, 255);
+}
+/* --------------------------------contact us END  */
+
+
 @media (min-width: 992px) { /* lg size ke baad apply hoga */
   .cards{
     /* background: #f6dddd; */
