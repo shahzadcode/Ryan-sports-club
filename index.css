@@ -90,9 +90,10 @@
   /* gap: 10px;  */
 }
 .gallery-img h1{
-background: #00000075;
-border-radius: 50px;
-padding: 20px;
+  background: #00000075;
+  border-radius: 50px;
+  font-size: 30px;
+  padding: 10px;
 }
 .image-container img {
   width: 100%;
