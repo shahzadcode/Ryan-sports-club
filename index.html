@@ -155,7 +155,7 @@
         and renowned for its state of the art amenities and splendid aura.</p>
       <button class="btn btn-outline-info nav-btn-clr">learn more</button>
     </div>
-   
+
   </section>
   <!-- gallery section  -->
   <section class="bg-body-secondary  gallery-img">
@@ -267,137 +267,77 @@
       </div>
     </div>
   </section>
-
+  <!-- feedback section -->
+  <div class="feedback">
+    <h2>Feedback</h2>
+    <input type="text" id="name" placeholder="Enter Name" required>
+    <input type="text" id="mobile" placeholder="Enter Mobile Number" required>
+    <input type="email" id="email" placeholder="Enter Email" required>
+    <p>How was your experience?</p>
+    <div class="emoji-container">
+      <div class="emoji" onclick="selectEmoji(this)">
+        😀<br>Extremely Satisfied
+      </div>
+      <div class="emoji" onclick="selectEmoji(this)">
+        🙂<br>Satisfied
+      </div>
+      <div class="emoji" onclick="selectEmoji(this)">
+        😐<br>Comments
+      </div>
+      <div class="emoji" onclick="selectEmoji(this)">
+        😞<br>Unsatisfied
+      </div>
+    </div>
+    <button class="feedback submit" onclick="submitFeedback()">Submit</button>
+    <p id="message"></p>
+  </div>
   <!-- footer section -->
-      <footer class="site-footer">
-          <div class="container">
-              <div class="row">
-                  <div class="col-12 col-md-3">
-  
-                      <div class="footer-widget">
-                          <div class="footer-widget">
-                              <h5 class="widget_title">About ryan sports club </h5>
-                              <div class="textwidget custom-html-widget">
-                                  <p class="mt-3 pe-4">
-                                      DHA has attained a valuable status serving as a benchmark for providing unparallel
-                                      living standards in Pakistan. Pakistan Defence Officers Housing Authority currently
-                                      owns and manages over an area of 8,797 Acres, serving several families... <a href="...">Read more</a>
-                                  </p>
-  
-                                  <script>
-  
-                                      function apply_class_log() {
-                                          var user_id = document.getElementById("user_login");
-                                          user_id.classList.add("form-control");
-  
-                                          var user_pass = document.getElementById("user_pass");
-                                          user_pass.classList.add("form-control");
-  
-                                          var user_btn = document.getElementById("wp-submit");
-                                          user_btn.classList.add("btn", "btn-success");
-                                      }
-  
-                                      apply_class_log();
-  
-                                  </script>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-12 col-md-3">
-  
-                      <div class="widget">
-  
-                          <div class="footer-widget">
-                              <div class="footer-widget">
-                                  <h5 class="widget_title">Quick Links</h5>
-                                  <ul class="list-unstyled">
-                                      <li><a href="....">Emergency / CPLC Contacts</a></li>
-                                      <li><a href="....">DHA City Online Payment</a></li>
-                                      <li><a href=".....">DHA Newsletters</a></li>
-  
-                                      <li><a href="....">DHA Employment Form</a>
-                                      </li>
-                                      <li><a href="....">FAQs</a></li>
-  
-                                      
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-12 col-md-3">
-                      <div class="widget">
-                          <div class="footer-widget">
-                              <div class="footer-widget">
-                                  <h5 class="widget_title">Get In Touch</h5>
-                                  <div class="textwidget custom-html-widget">
-                                      <ul class="list-unstyled mt-3 quick-links reach-us">
-                                          <li>
-                                              <a href=""><i class="fa-solid fa-location-arrow"></i>2-B
-                                                  East Street Ph-1 DHA Karachi-75500</a>
-                                          </li>
-                                          <li>
-                                              <a href=""><i class="fa-solid fa-mobile"></i>Phone: +92 21
-                                                  35886401-5</a>
-                                          </li>
-                                          <li>
-                                              <a href=""><i class="fa-solid fa-phone"></i>UAN: +92 21
-                                                  111-589-589</a>
-                                          </li>
-                                          <li>
-                                              <a href=""><i class="fa-solid fa-envelope"></i>Email: dha@dhakarachi.org</a>
-                                          </li>
-  
-  
-  
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-  
-                      </div>
-                  </div>
-                  <div class="col-12 col-md-3">
-                      <div class="widget">
-                          <h5 class="text-site-yello">Stay Up To Date / Subscribe With Us</h5>
-                          <div class="subscribe-form mt-3">
-                              <form>
-                                  <div class="mb-3">
-                                      <input type="text" class="form-control" aria-label="" placeholder="Name">
-                                  </div>
-                                  <div class="mb-3">
-                                      <input type="email" class="form-control" aria-label="" placeholder="Email">
-                                  </div>
-                                  <div class="mb-3">
-                                      <input type="text" class="form-control" aria-label="" placeholder="Mobile No. (03XX-XXXXXXX)">
-                                  </div>
-                                  <div class="mb-3">
-                                      <button type="submit" class="btn btn-outline-warning float-end">Submit</button>
-                                  </div>
-                              </form>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row footer-bottom pt-3">
-                  <div class="row justify-content-between">
-                      <div class="col-12 col-md-6">
-                          <p class="text-gray">
-                              © 2025 ryan sports club. All rights reserved.
-                          </p>
-                      </div>
-  
-                  </div>
-              </div>
-          </div>
-      </footer>
-    
-  
-  
-  
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- About Section -->
+                <div class="footer-section about">
+                    <h2>Ryan Sports Club</h2>
+                    <p>  Ryan Sports Club is a premier destination for sports enthusiasts, dedicated to promoting fitness,
+                        teamwork, and competitive excellence. Our club offers state-of-the-art facilities, professional
+                        coaching, and a wide range of sports programs for athletes of all ages and skill levels. </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="footer-section contact">
+                    <h2>Contact Us</h2>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Sports Lane, City, Country</p>
+                    <p><i class="fas fa-phone-alt"></i> +123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> contact@ryansportsclub.com</p>
+                </div>
+
+                <!-- Opening Hours Section -->
+                <div class="footer-section hours">
+                    <h2>Opening Hours</h2>
+                    <p><strong>Monday - thursday:</strong> 6:00 AM - 11:00 PM</p>
+                    <p><strong>friday - Saturday:</strong> 9:00 AM - 8:00 PM</p>
+                    <p><strong>Sunday:</strong>11:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ryan Sports Club | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -410,7 +350,11 @@
 
 
 
-  </footer>
+
+
+
+
+
 
   <!-- javascript external link  -->
   <script src="index.js"></script>
@@ -423,7 +367,7 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
 
-    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
