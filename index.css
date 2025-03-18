@@ -1,12 +1,13 @@
-/* first line  */
+/* ------------------------------------------------header first line start  */
 .Logo_size {
   width: 70px;
 }
 
-.nav-btn-clr:hover {
-  color: White;
+.nav-btn-clr:hover,
+.nav-btn-clr:active {
+  color: white !important;
 }
-  .line {
+.line {
   margin: 0px;
 }
 .second_nav {
@@ -16,26 +17,23 @@
   text-align: center;
   width: 200px;
   margin: 10px auto;
-  /* background: #000; */
 }
 .btns {
   background: rgb(255, 255, 255);
-  /* background-color: #000; */
   border-radius: 5px;
   border: none;
 }
 
 .btns:hover {
   background-color: rgb(247, 247, 247);
-  /* border-radius: 20px; */
 }
+
+/* ------------------------------------------------header first line End  */
 
 .list {
   display: none;
   position: absolute;
-  /* border: 1px solid black; */
   background: #ffffff;
-  /* width: 200px; */
   padding: 0;
   width: 200px;
   margin: 0;
@@ -52,12 +50,12 @@
   background: #f5f5f5;
   padding: 3px 0px;
 }
-.second_nav a  {
+.second_nav a {
   display: block;
   text-decoration: none;
   color: #000;
 }
-/* -------------------------------------------------slider  */
+/* -------------------------------------------------------slider start */
 
 .carousel-item img {
   width: 100%;
@@ -67,35 +65,24 @@
 
 .slider-content {
   background-color: rgba(0, 0, 0, 0.502);
-  /* color: white !important; */
   border-radius: 20px;
-  /* position: absolute; */
-  /* top: 0; */
-  /* margin: auto; */
 }
 .slider-content p {
   color: white !important;
   padding-bottom: 10px;
-  /* position: absolute; */
-  /* top: 0; */
-  /* margin: auto; */
 }
 
 .carousel-indicators button {
-  background-color: #1be1ff !important; /* Forces white background */
+  background-color: #a4ebf5 !important;
   width: 10px !important;
   height: 10px !important;
   border-radius: 100%;
 }
 
-/*----------------------------------------- facilities section  */
+/*----------------------------------------- facilities section  start*/
 
 .image-container {
-  /* height: 10%;  */
   background: #000;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* gap: 10px;  */
 }
 .card-img h1 {
   background: #00000075;
@@ -107,7 +94,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* border-radius: 10px; */
 }
 .overlay {
   position: absolute;
@@ -115,7 +101,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: rgba(0, 0, 0, 0.304); */
   color: white;
   display: flex;
   justify-content: center;
@@ -128,9 +113,8 @@
   background-image: url("https://www.sportsclub-gujarat.com/wp-content/uploads/2019/08/about_bg2.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; /* This centers the image */
+  background-position: center;
   padding-bottom: 50px;
-  /* border: none; */
 }
 /* ---------------------------------------------responsive button nav  */
 .show {
@@ -138,13 +122,10 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  /* left: 0; */
-  /* right: 0; */
   top: 0;
   padding-top: 80px;
   position: fixed;
   margin: auto;
-  /* display: flex; */
 }
 .fix {
   position: fixed !important;
@@ -231,7 +212,6 @@ p {
 }
 /* ---------------------------------------------------------------gallery  */
 @media (max-width: 992px) {
-  /* nav list  */
   .list {
     position: static;
     background: #f9f9f9;
@@ -243,16 +223,13 @@ p {
   .list > li {
     background: #ffffff;
   }
-  /* cards  */
 
   .hamburger-btn {
     z-index: 10;
   }
 }
 @media (min-width: 992px) {
-  /* cards  */
   .cards {
-    /* background: #f6dddd; */
     height: 500px;
     width: 100%;
     justify-content: space-between;
@@ -262,7 +239,6 @@ p {
   }
 }
 @media (min-width: 1800px) {
-  /* slider  */
   .carousel-item {
     background: #000;
     height: 30vh;
